@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 220px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    h1 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .toggle-btn {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      background-color: #4285F4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s, box-shadow 0.3s;
+    }
+    .toggle-btn.off {
+      background-color: #DB4437;
+    }
+    .toggle-btn:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .toggle-btn:active {
+      background-color: #2a75e6;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .toggle-btn.off:active {
+      background-color: #c13527;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ad & Fake User</h1>
+  <button id="toggleAds" class="toggle-btn">Disable Ad Blocker</button>
+  <button id="toggleFake" class="toggle-btn">Disable Fake User Blocker</button>
+  <script src="popup.js"></script>
+</body>
+</html>
